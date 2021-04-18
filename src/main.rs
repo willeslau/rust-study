@@ -1,38 +1,26 @@
-use std::{io::{Read, Write}, net::TcpListener, process::exit};
-use std::net::TcpStream;
+mod class4;
 
-fn main() {
-    // Create the server
-    let listener = TcpListener::bind("0.0.0.0:8080");
+use class4::question1::{Question1};
+use class4::question2::sum;
+use crate::class4::question3::{Square, Shape, Rectangle, Circle};
 
-    // Check if there are errors bring up the server
-    let listener = match listener {
-        Ok(f) => f,
-        Err(e) => {
-            print!("cannot create server due to: {}", e);
-            exit(1);
-        }
-    };
+fn lesson_four() {
+    // question 1
+    let q_one = Question1{};
+    q_one.run();
 
-    println!("Server is listening on port 8080 of 0.0.0.0");
+    // question 2
+    let nums: [u32; 4] = [1, 2, 3, 4];
+    println!("sum without overflow: {:?}", sum(&nums));
+    let nums: [u32; 4] = [1, 2, 3, u32::MAX];
+    println!("sum with overflow: {:?}", sum(&nums));
 
-    for stream in listener.incoming() {
-        // Read the stream
-        let stream = stream.unwrap();
-        println!("connection established, {:?}\n", stream);
-        handle_connection(stream);
-    }
+    // question 3
+    assert_eq!(Square::new(2.0).area(), 4.0);
+    assert_eq!(Rectangle::new(2.0, 3.0).area(), 6.0);
+    println!("area of circle is {}", Circle::new(2.0).area());
 }
 
-fn handle_connection(mut stream: TcpStream) {
-    let mut buffer = [0; 1024];
-    
-    // Read value into buffer
-    stream.read(&mut buffer).unwrap();
-
-    // Write value back into stream
-    stream.write(&mut buffer).unwrap();
-
-    // Flush the value
-    stream.flush().unwrap();
+fn main() {
+    lesson_four();
 }

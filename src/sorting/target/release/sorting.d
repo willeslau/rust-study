@@ -1,0 +1,1 @@
+/home/lxm/Documents/Code/rust-practice/src/sorting/target/release/sorting: /home/lxm/Documents/Code/rust-practice/src/sorting/src/insert.rs /home/lxm/Documents/Code/rust-practice/src/sorting/src/lib.rs /home/lxm/Documents/Code/rust-practice/src/sorting/src/main.rs

@@ -6,10 +6,12 @@
       <sourceFolder url="file://$MODULE_DIR$/src/sorting/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/leetcode/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/leetcode/src/RussianDollEnvelopes/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/algorithm/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/src/sorting/target" />
       <excludeFolder url="file://$MODULE_DIR$/src/leetcode/target" />
       <excludeFolder url="file://$MODULE_DIR$/src/leetcode/src/RussianDollEnvelopes/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/algorithm/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

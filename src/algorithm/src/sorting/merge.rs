@@ -5,8 +5,7 @@ use crate::Sorting;
 
 /// When the number of elements is small, switch to insertion sort improves the performance.
 /// However, when compared with Rust std lib, this is too slow. One way to enhance this 
-/// maybe is the recursion?
- 
+/// maybe is the recursion? 
 #[derive(Debug)]
 pub struct MergeSort<T: Ord + Clone>{
     phantom: PhantomData<T>

@@ -6,3 +6,4 @@ A rust study repo for algorithms and data structures
 * Make modification without ownership transfer, is it possible?
 * Borrow vs RC
 * Mutable reference and mutable variable: `https://cotigao.medium.com/mutable-reference-in-rust-995320366e22`
+* Linked list: `https://rust-unofficial.github.io/too-many-lists/index.html`

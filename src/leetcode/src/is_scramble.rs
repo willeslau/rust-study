@@ -40,7 +40,7 @@ impl Solution {
 
 		for k in 2..s1.len()+1 {
 			for i in 0..s1.len()-k+1 {
-				if i + k > s1.len()-k+1 { break; }
+				if i + k > s1.len() { break; }
 
 				for j in 0..s1.len() {
 					if j + k > s1.len() { break; }
@@ -49,13 +49,11 @@ impl Solution {
 					// dp[i][j][k] = is_scramble(dp[i][j][1], dp[i+1][j+1][k-1]) || is_scramble(dp[i][j][k-1], dp[i+k-1][j+k-1][1]) ||
 					//               is_scramble(dp[i][j][2], dp[i+1][j+1][k-2]) || is_scramble(dp[i][j][k-2], dp[i+k-2][j+k-2][2])
 					for h in 1..k {
-						// println!("i: {}, j: {}, k: {}, h: {}", i,j, k, h);
 						dp[i][j][k] = (dp[i][j][h] && dp[i+h][j+h][k-h]) || (dp[i][j+k-h][h] && dp[i+h][j][k-h]);
 						if dp[i][j][k] { break; }
 					}
 				}
 			}
-			// Self::print_k(&dp, k);
 		}
 		
 

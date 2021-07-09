@@ -4,3 +4,5 @@ mod reducing_dishes;
 mod max_sum_of_three_subarrays;
 mod max_sum_submatrix;
 mod is_scramble;
+mod number_of_arithmetic_slices;
+mod two_sum;

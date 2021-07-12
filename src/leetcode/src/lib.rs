@@ -6,3 +6,4 @@ mod max_sum_submatrix;
 mod is_scramble;
 mod number_of_arithmetic_slices;
 mod two_sum;
+mod find_all_concatenated_words_in_a_dict;

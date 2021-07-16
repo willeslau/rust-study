@@ -8,3 +8,7 @@ mod number_of_arithmetic_slices;
 mod two_sum;
 mod find_all_concatenated_words_in_a_dict;
 mod get_skyline;
+mod min_absolute_sum_diff;
+mod min_insertions;
+mod can_partition_k_subsets;
+mod minimum_time_required;

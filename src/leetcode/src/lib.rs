@@ -1,3 +1,5 @@
+#![feature(array_map)]
+
 mod russian_doll_envelopes;
 mod palindrome_partitioning_ii;
 mod reducing_dishes;
@@ -12,3 +14,6 @@ mod min_absolute_sum_diff;
 mod min_insertions;
 mod can_partition_k_subsets;
 mod minimum_time_required;
+mod group_anagrams;
+mod count_palindromic_subsequences;
+mod min_stickers;

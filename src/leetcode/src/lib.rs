@@ -17,3 +17,5 @@ mod minimum_time_required;
 mod group_anagrams;
 mod count_palindromic_subsequences;
 mod min_stickers;
+mod max_frequency;
+mod strange_printer;

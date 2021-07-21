@@ -19,3 +19,5 @@ mod count_palindromic_subsequences;
 mod min_stickers;
 mod max_frequency;
 mod strange_printer;
+mod split_array_same_average;
+mod racecar;

@@ -1,5 +1,6 @@
 mod sorting;
 mod linkedlist;
+mod queue;
 
 use std::cmp::Ord;
 pub use linkedlist::List;

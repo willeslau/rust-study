@@ -20,4 +20,6 @@ mod min_stickers;
 mod max_frequency;
 mod strange_printer;
 mod split_array_same_average;
-mod racecar;
+mod profitable_schemes;
+mod super_egg_drop;
+mod split_array;

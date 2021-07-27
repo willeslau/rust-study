@@ -1,6 +1,7 @@
 use std::cmp::Ordering;
 
 mod priority_queue;
+mod key_value_queue;
 
 pub struct SimplePriorityQueue<T: Ord + Default> {
     data: Vec<T>,

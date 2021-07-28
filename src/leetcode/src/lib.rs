@@ -23,3 +23,7 @@ mod split_array_same_average;
 mod profitable_schemes;
 mod super_egg_drop;
 mod split_array;
+mod paint_house_i;
+mod paint_house_iii;
+mod find_rotate_steps;
+mod pizza_with_3n_slices;

@@ -27,3 +27,6 @@ mod paint_house_i;
 mod paint_house_iii;
 mod find_rotate_steps;
 mod pizza_with_3n_slices;
+mod num_of_ways;
+mod merge_stones;
+mod merge_stones_ii;
